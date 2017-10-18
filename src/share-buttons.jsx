@@ -288,3 +288,8 @@ export const RedditShareButton = createShareButton('reddit', props => ({
   windowWidth: 660,
   windowHeight: 460,
 });
+
+export const HatenaShareButton = createShareButton('hatena', () => ({}), {}, {
+  windowWidth: 960,
+  windowHeight: 460,
+});

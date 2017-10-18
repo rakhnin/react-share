@@ -37,7 +37,7 @@ export function whatsapp(url, { title, separator }) {
 export function facebook(url, { quote, hashtag }) {
   assert(url, 'facebook.url');
 
-  return 'https://www.facebook.com/sharer/sharer.php' + objectToGetParams({
+  return 'https://www.facebook.com/share.php' + objectToGetParams({
     u: url,
     quote,
     hashtag,
@@ -100,4 +100,10 @@ export function reddit(url, { title }) {
     url,
     title,
   });
+}
+
+export function hatena(url) {
+  assert(url, 'hatena.url');
+
+  return 'http://b.hatena.ne.jp/entry/' + url;
 }
